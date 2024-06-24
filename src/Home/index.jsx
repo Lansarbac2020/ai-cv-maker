@@ -29,7 +29,7 @@ function Home() {
      <div className='flex items-center gap-2 '>
          <Link to={'/dashboard'}> <Button >Dashboard</Button></Link>
        
-      <UserButton/>
+     
       </div>:
     
       <Link to={'/auth/sign-in'}><Button>Get Started</Button></Link>
@@ -127,12 +127,12 @@ function Home() {
      
     {isSignedIn ?
      <div className='flex items-center gap-2 '>
-         <Link to={'/dashboard'}> <Button >Dashboard</Button></Link>
+         <Link className="inline-block rounded  px-12 py-3 text-sm font-medium text-white transition hover:scale-105 focus:outline-none focus:ring focus:ring-yellow-400" to={'/dashboard'}> <Button variant="outline" >Dashboard</Button></Link>
        
-      <UserButton/>
+      
       </div>:
     
-      <Link to={'/auth/sign-in'}><Button>Get started now</Button></Link>
+      <Link to={'/auth/sign-in'}><Button>Get Started Now</Button></Link>
       }
     </div>
     </section>
