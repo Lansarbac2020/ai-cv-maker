@@ -39,7 +39,7 @@ function ResumeCarItem({resume,refreshData}) {
   const onDelete=()=>{
     setLoading(true)
     GlobalApi.DeleteResumeById(resume.documentId).then(resp=>{
-      console.log(resp.data);
+      //console.log(resp.data);
       toast('Resume Deleted')
       refreshData();
       setLoading(false);
@@ -91,7 +91,7 @@ function ResumeCarItem({resume,refreshData}) {
     <AlertDialogHeader>
       <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
       <AlertDialogDescription>
-        This action cannot be undone. This will permanently delete your account
+        This action cannot be undone. This will permanently delete your resume
         and remove your data from our servers.
       </AlertDialogDescription>
     </AlertDialogHeader>
